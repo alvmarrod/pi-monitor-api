@@ -2,7 +2,8 @@
 
 <p align="center">
     <img alt="GitHub Tag" src="https://img.shields.io/github/v/tag/alvmarrod/pi-monitor-api">
-    <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/alvmarrod/pi-monitor-api">
+    <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/alvmarrod/pi-monitor-api?filename=src%2Fgo.mod">
+
 </p>
 
 ## Overview
@@ -58,7 +59,7 @@ The project is organized according to hexagonal architecture principles, with cl
 1. Clone the repository and go into the src folder:
 
    ```bash
-   git clone https://github.com/yourusername/pi-monitor-api.git
+   git clone https://github.com/alvmarrod/pi-monitor-api.git
    cd pi-monitor-api
    ```
 
