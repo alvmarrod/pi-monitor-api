@@ -1,9 +1,9 @@
 # pi-monitor-api
 
 <p align="center">
-    <img alt="GitHub Tag" src="https://img.shields.io/github/v/tag/alvmarrod/pi-monitor-api">
-    <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/alvmarrod/pi-monitor-api?filename=src%2Fgo.mod">
-
+  <img alt="GitHub Tag" src="https://img.shields.io/github/v/tag/alvmarrod/pi-monitor-api">
+  <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/alvmarrod/pi-monitor-api?filename=src%2Fgo.mod">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/alvmarrod/pi-monitor-api">
 </p>
 
 ## Overview

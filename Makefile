@@ -9,7 +9,7 @@ IMAGE_NAME?=pi_monitor_api
 IMAGE_VERSION=$(shell cat ./version.txt)
 
 CONTAINER_PORT?=8080
-BOT_CONTAINER_ALIAS?=pi_monitor
+API_CONTAINER_ALIAS?=pi_monitor
 
 # Enable experimental features for Docker to build for other archs
 export DOCKER_CLI_EXPERIMENTAL=enabled
@@ -74,7 +74,7 @@ build-docker-image-arm64: build-linux-arm64
 
 run-docker-image:
 	docker run \
-	--name ${BOT_CONTAINER_ALIAS} \
+	--name ${API_CONTAINER_ALIAS} \
 	-d \
 	-p ${CONTAINER_PORT}:${BINARY_PORT} \
 	--security-opt systempaths=unconfined \
@@ -86,16 +86,16 @@ stop:
 
 container-rm:
 	@echo "Deleting Docker container..."
-	-docker rm -f ${BOT_CONTAINER_ALIAS}
+	-docker rm -f ${API_CONTAINER_ALIAS}
 
 container-debug:
-	docker exec -it ${BOT_CONTAINER_ALIAS} /bin/sh
+	docker exec -it ${API_CONTAINER_ALIAS} /bin/sh
 
 container-logs:
-	docker logs -f `docker ps -qa --filter name=${BOT_CONTAINER_ALIAS}`
+	docker logs -f `docker ps -qa --filter name=${API_CONTAINER_ALIAS}`
 
 container-stats:
-	docker stats `docker ps -q --filter name=${BOT_CONTAINER_ALIAS}`
+	docker stats `docker ps -q --filter name=${API_CONTAINER_ALIAS}`
 
 container-redeploy: stop container-rm delete-builds build build-docker-image run-docker-image
 
