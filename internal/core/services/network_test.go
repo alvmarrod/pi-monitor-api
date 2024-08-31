@@ -2,8 +2,9 @@ package services
 
 import (
 	"errors"
-	"pi-monitor-api/internal/core/domain"
 	"testing"
+
+	"github.com/alvmarrod/pi-monitor-api/internal/core/domain"
 
 	"github.com/stretchr/testify/assert"
 )

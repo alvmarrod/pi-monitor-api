@@ -1,4 +1,4 @@
-module pi-monitor-api
+module github.com/alvmarrod/pi-monitor-api
 
 go 1.22.6
 

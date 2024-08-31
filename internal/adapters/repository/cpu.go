@@ -4,9 +4,10 @@ import (
 	"bufio"
 	"errors"
 	"os"
-	"pi-monitor-api/internal/core/domain"
 	"strconv"
 	"strings"
+
+	"github.com/alvmarrod/pi-monitor-api/internal/core/domain"
 )
 
 /* ************************************* MOCKING SCAFFOLDING ************************************* */

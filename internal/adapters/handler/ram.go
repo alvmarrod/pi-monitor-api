@@ -4,7 +4,8 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
-	"pi-monitor-api/internal/core/ports"
+
+	"github.com/alvmarrod/pi-monitor-api/internal/core/ports"
 )
 
 type RAMHandler struct {

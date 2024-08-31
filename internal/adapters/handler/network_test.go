@@ -5,9 +5,10 @@ import (
 	"errors"
 	"net/http"
 	"net/http/httptest"
-	"pi-monitor-api/internal/adapters/handler"
-	"pi-monitor-api/internal/core/domain"
 	"testing"
+
+	"github.com/alvmarrod/pi-monitor-api/internal/adapters/handler"
+	"github.com/alvmarrod/pi-monitor-api/internal/core/domain"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

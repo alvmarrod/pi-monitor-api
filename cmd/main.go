@@ -3,9 +3,10 @@ package main
 import (
 	"log"
 	"net/http"
-	"pi-monitor-api/internal/adapters/handler"
-	"pi-monitor-api/internal/adapters/repository"
-	"pi-monitor-api/internal/core/services"
+
+	"github.com/alvmarrod/pi-monitor-api/internal/adapters/handler"
+	"github.com/alvmarrod/pi-monitor-api/internal/adapters/repository"
+	"github.com/alvmarrod/pi-monitor-api/internal/core/services"
 
 	"github.com/gorilla/mux"
 )

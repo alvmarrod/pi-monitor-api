@@ -5,9 +5,10 @@ import (
 	"errors"
 	"fmt"
 	"log"
-	"pi-monitor-api/internal/core/domain"
 	"strconv"
 	"strings"
+
+	"github.com/alvmarrod/pi-monitor-api/internal/core/domain"
 )
 
 /* ******************************************** AUX ******************************************** */

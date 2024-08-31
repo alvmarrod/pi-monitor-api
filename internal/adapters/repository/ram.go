@@ -3,9 +3,10 @@ package repository
 import (
 	"bufio"
 	"errors"
-	"pi-monitor-api/internal/core/domain"
 	"strconv"
 	"strings"
+
+	"github.com/alvmarrod/pi-monitor-api/internal/core/domain"
 )
 
 /* ************************************* MOCKING SCAFFOLDING ************************************* */

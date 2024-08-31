@@ -1,8 +1,9 @@
 package repository
 
 import (
-	"pi-monitor-api/internal/core/domain"
 	"testing"
+
+	"github.com/alvmarrod/pi-monitor-api/internal/core/domain"
 
 	"github.com/stretchr/testify/assert"
 )

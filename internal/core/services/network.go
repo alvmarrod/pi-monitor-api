@@ -1,8 +1,8 @@
 package services
 
 import (
-	"pi-monitor-api/internal/core/domain"
-	"pi-monitor-api/internal/core/ports"
+	"github.com/alvmarrod/pi-monitor-api/internal/core/domain"
+	"github.com/alvmarrod/pi-monitor-api/internal/core/ports"
 )
 
 // NetworkService provides business logic related to network operations.
