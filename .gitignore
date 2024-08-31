@@ -25,4 +25,4 @@ go.work.sum
 .env
 
 # Compiled binary files
-src/pi_monitor_api_*
+pi_monitor_api_*

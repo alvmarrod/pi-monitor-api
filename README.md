@@ -56,7 +56,7 @@ The project is organized according to hexagonal architecture principles, with cl
 
 ### Steps
 
-1. Clone the repository and go into the src folder:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/alvmarrod/pi-monitor-api.git
@@ -75,7 +75,6 @@ Long version:
 2. Install dependencies:
 
    ```bash
-   cd src
    go mod tidy
    ```
 
@@ -124,10 +123,9 @@ curl http://localhost:8080/v1/cpu
 
 ## Testing
 
-1. Make sure you are at the root of the application: `./src`
-2. Add any missing dependencies: `go mod tidy`
-3. Start the service: `go run cmd/main.go`
-4. Test with cURL or your favourite tool
+1. Add any missing dependencies: `go mod tidy`
+2. Start the service: `go run cmd/main.go`
+3. Test with cURL or your favourite tool
 
 ## FAQ
 

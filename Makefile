@@ -15,28 +15,23 @@ API_CONTAINER_ALIAS?=pi_monitor
 export DOCKER_CLI_EXPERIMENTAL=enabled
 
 build:
-	cd ./src; \
 	go mod tidy; \
 	CGO_ENABLED=0 go build -o ${BINARY_NAME}_${VERSION} cmd/main.go
 
 build-linux-amd64: delete-builds
-	cd ./src; \
 	go mod tidy; \
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ${BINARY_NAME}_${VERSION}_amd64 cmd/main.go
 
 build-linux-armv7: delete-builds
-	cd ./src; \
 	go mod tidy; \
 	CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=7 go build -o ${BINARY_NAME}_${VERSION}_armv7 cmd/main.go
 
 build-linux-arm64: delete-builds
-	cd ./src; \
 	go mod tidy; \
 	CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o ${BINARY_NAME}_${VERSION}_arm64 cmd/main.go
 
 delete-builds:
-	-cd ./src; \
-	rm -f ${BINARY_NAME}_*
+	-rm -f ${BINARY_NAME}_*
 
 create-builder:
 	if ! docker buildx ls | grep -q 'multiplatform'; then \
@@ -45,15 +40,13 @@ create-builder:
 
 run:
 	mkdir -p ./logs; \
-	./src/${BINARY_NAME}_${VERSION} > ./logs/${BINARY_NAME}_${VERSION}.log 2>&1 &
+	./${BINARY_NAME}_${VERSION} > ./logs/${BINARY_NAME}_${VERSION}.log 2>&1 &
 
 test:
-	cd ./src; \
 	go mod tidy; \
 	go test ./... -cover -count=1
 
 local-run-debug:
-	cd ./src; \
 	go mod tidy; \
 	go run cmd/main.go
 
