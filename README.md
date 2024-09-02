@@ -83,7 +83,7 @@ Long version:
 3. Build the application:
 
    ```bash
-   version=`cat ./../version.txt`
+   version=`cat ./version.txt`
    go build -o pi_monitor_api_$version cmd/main.go
    ```
 
