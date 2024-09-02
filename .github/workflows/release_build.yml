@@ -28,6 +28,6 @@ jobs:
         with:
           version: latest
           args: release --rm-dist
-          workdir: ./cmd/main # <-- path to main
+          workdir: ./cmd/main.go
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
