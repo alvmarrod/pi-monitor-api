@@ -4,6 +4,7 @@
   <img alt="GitHub Tag" src="https://img.shields.io/github/v/tag/alvmarrod/pi-monitor-api">
   <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/alvmarrod/pi-monitor-api?filename=go.mod">
   <a href="https://goreportcard.com/report/github.com/alvmarrod/pi-monitor-api"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/alvmarrod/pi-monitor-api"></a>
+  <a href="https://github.com/alvmarrod/pi-monitor-api/actions/workflows/release_build.yml"><img alt="Publish Release" src="https://github.com/alvmarrod/pi-monitor-api/actions/workflows/release_build.yml/badge.svg?branch=main"></a>
   <img alt="GitHub License" src="https://img.shields.io/github/license/alvmarrod/pi-monitor-api">
 </p>
 
