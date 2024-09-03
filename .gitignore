@@ -26,3 +26,5 @@ go.work.sum
 
 # Compiled binary files
 pi_monitor_api_*
+
+dist/
